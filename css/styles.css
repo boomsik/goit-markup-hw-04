@@ -144,9 +144,14 @@ color: var(--little-text);
 /* --------------EFFECTIVE-------------- */
 
 .effective {
+margin: 0 auto;
 padding-top: 188px;
 padding-bottom: 188px;
+max-width: 1440px;
 background: var(--big-text);
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) 100%), url(../images/people-office.jpg);
+background-repeat: no-repeat;
+background-position: center;
 }
 
 .effective-title {
@@ -221,6 +226,21 @@ padding-bottom: 120px;
  .opportunities-item:last-child {
      margin-right: 0;
  }
+
+.opportunities-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    background-color: var(--color-bg-team);
+    border-radius: 4px;
+}
+
+.opportunities-icons svg {
+    display: block;
+    max-width: 60px;
+    max-height: 112px;
+}
 
 .opportunities-subtitle {
     margin: 0;
