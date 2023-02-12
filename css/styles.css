@@ -604,7 +604,6 @@ background-color: var(--color-social-hover) ;
 .choise-cards {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     margin: 0;
     margin-top: 72px;
     padding-left: 0;
@@ -612,9 +611,10 @@ background-color: var(--color-social-hover) ;
 }
 
 .choise-card {
-    background: var(--body-head-color);
     margin-bottom: 48px;
     margin-right: 24px;
+    background: var(--body-head-color);
+    box-shadow: 0px 1px 6px rgb(46 47 66 / 8%);
 
 }
 
@@ -628,7 +628,13 @@ background-color: var(--color-social-hover) ;
 
 .choise-link{
 text-decoration: none;
+
 }
+
+.choise-card:is(:hover, :focus) {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 
 .choise-img{
     display: block;
@@ -659,3 +665,4 @@ text-decoration: none;
     line-height: 24px;
     letter-spacing: 0.02em;
 }
+
