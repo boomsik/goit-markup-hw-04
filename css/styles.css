@@ -150,7 +150,8 @@ color: var(--little-text);
 margin: 0 auto;
 padding-top: 188px;
 padding-bottom: 188px;
-max-width: 1440px;
+ max-width: 1440px; 
+background-size: cover;
 background: var(--big-text);
 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) 100%), url(../images/people-office.jpg);
 background-repeat: no-repeat;
@@ -223,7 +224,7 @@ padding-bottom: 120px;
 }
 
 .opportunities-item {
-        margin-right: 22px;
+        margin-right: 24px;
 }
 
  .opportunities-item:last-child {
@@ -240,9 +241,10 @@ padding-bottom: 120px;
 }
 
 .opportunities-icons svg {
-    display: block;
-    max-width: 60px;
-    max-height: 112px;
+    width: 64px;
+    height: 64px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .opportunities-subtitle {
@@ -415,6 +417,7 @@ height: 16px;
 
 
 .customers-title {
+    margin-top: 0;
     margin-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
@@ -627,11 +630,11 @@ background-color: var(--color-social-hover) ;
 }
 
 .choise-link{
+    display: inline-block;
 text-decoration: none;
-
 }
 
-.choise-card:is(:hover, :focus) {
+.choise-link:is(:hover, :focus){
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
